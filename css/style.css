@@ -107,7 +107,7 @@ img {
 
 /* hero */
 .hero {
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .hero-title {
   font-weight: 900;
@@ -177,6 +177,7 @@ img {
 }
 .our-interests-list {
   display: flex;
+  padding-bottom: 94px;
 }
 .our-interests-list-item:not(:last-child) {
   margin-right: 30px;
@@ -200,12 +201,16 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 /* our team block */
+.team {
+  background-color: #f5f4fa;
+}
 .team-title {
   padding-top: 94px;
   margin-bottom: 50px;
 }
 .team-list {
   display: flex;
+  padding-bottom: 94px;
 }
 .team-list-item:not(:last-child) {
   padding-right: 30px;
@@ -308,6 +313,14 @@ img {
 }
 
 /* portfolio */
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-list-item:not(:last-child) {
+  margin-right: 8px;
+}
 .filter-list-item {
   font-style: normal;
   font-weight: 500;
@@ -315,6 +328,7 @@ img {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--main-color-title);
+  padding-top: 94px;
 }
 .filter-list-item :hover,
 :focus {
@@ -327,6 +341,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color-title);
+  margin-bottom: 4px;
 }
 .portfolio-list-item-text {
   font-weight: 400;
@@ -343,4 +358,38 @@ img {
   letter-spacing: 0.03em;
   /* color: var(--grand-title-color); */
   color: gray;
+  display: none;
+}
+.portfolio-list p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+}
+.filter-list-btn {
+  background: #f5f4fa;
+  /* shadow-middle */
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.portfolio-list-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+.portfolio-list :nth-child(3n) {
+  margin-right: 0px;
+}
+.portfolio-list :nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.portfolio-list-img {
+  margin-bottom: 20px;
 }

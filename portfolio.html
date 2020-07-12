@@ -14,42 +14,48 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header-page">
-      <nav class="main-nav">
-        <a href="./index.html" class="logo">
-          <img src="./images/WebStudio.svg" alt="логотип" />
-        </a>
-        <ul class="main-nav-list list">
-          <li class="main-nav-item">
-            <a class="main-nav-item-link link" href="./index.html">Студия</a>
-          </li>
-          <li class="main-nav-item">
-            <a class="main-nav-item-link link" href="./portfolio.html"
-              >Портфолио</a
-            >
-          </li>
-          <li class="main-nav-item">
-            <a class="main-nav-item-link link" href="">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <address class="adress-main">
-        <ul class="adress-list list">
-          <li class="adress-item">
-            <a class="adress-item-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="adress-item">
-            <a class="adress-item-link link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <nav class="main-nav">
+          <a href="./index.html" class="logo">
+            <img src="./images/WebStudio.svg" alt="логотип" />
+          </a>
+          <ul class="main-nav-list list">
+            <li class="main-nav-item">
+              <a class="main-nav-item-link link" href="./index.html">Студия</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-item-link link" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-item-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="adress-utils">
+          <address class="adress-main">
+            <ul class="adress-list list">
+              <li class="adress-item">
+                <a
+                  class="adress-item-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="adress-item">
+                <a class="adress-item-link link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
     </header>
     <main>
       <!-- Кнопки сортировки -->
-      <section class="filter">
+      <section class="filter container">
         <h1 hidden>скрытый заголовок</h1>
         <ul class="filter-list list">
           <li class="filter-list-item list">
@@ -70,7 +76,7 @@
         </ul>
       </section>
       <!-- Портфолио -->
-      <section>
+      <section class="container">
         <h1 hidden>Работы Портфолио</h1>
         <ul class="portfolio-list list">
           <li class="portfolio-list-item">
@@ -226,90 +232,96 @@
     </main>
     <footer>
       <!-- логотип футер -->
-      <div class="footer-container">
-        <div class="logo-container">
-          <a class="logo" href="/">
-            <img src="./images/WebStudio-footer.svg" alt="логотип" />
-          </a>
-          <address class="address">
-            <!-- Контактная информация -->
-            <ul class="address-list list">
-              <li class="address-item">
+      <div class="main-footer-container">
+        <div class="footer-container container">
+          <div class="logo-container">
+            <a class="logo-footer" href="/">
+              <img
+                class="footer-logo"
+                src="./images/WebStudio-footer.svg"
+                alt="логотип"
+              />
+            </a>
+            <address class="address">
+              <!-- Контактная информация -->
+              <ul class="address-list list">
+                <li class="address-item">
+                  <a
+                    class="address-item-link maps link"
+                    target="_blank"
+                    href="https://goo.gl/maps/2NKbzkvfWFXUUTUt6"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="address-item">
+                  <a
+                    class="address-item-link link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address-item">
+                  <a class="address-item-link link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-container">
+            <b class="social-container-text">ПРИСОЕДЕНЯЙТЕСЬ</b>
+            <ul class="social-container-list list">
+              <li class="social-container-list-item">
                 <a
-                  class="address-item-link maps link"
+                  class="social-container-list-item-link"
                   target="_blank"
-                  href="https://goo.gl/maps/2NKbzkvfWFXUUTUt6"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  href="https://www.instagram.com"
                 >
+                  <img
+                    class="social-container-list-item-img"
+                    src="./images/Vector-instagram.svg"
+                    alt="иконка инстаграм"
+                  />
+                </a>
               </li>
-              <li class="address-item">
+              <li class="social-container-list-item">
                 <a
-                  class="address-item-link link"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+                  class="social-container-list-item-link"
+                  target="_blank"
+                  href="#"
                 >
+                  <img
+                    class="social-container-list-item-img"
+                    src="./images/Vector-twr.svg"
+                    alt="иконка твиттера"
+                /></a>
               </li>
-              <li class="address-item">
-                <a class="address-item-link link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
+              <li class="social-container-list-item">
+                <a
+                  class="social-container-list-item-link"
+                  target="_blank"
+                  href="#"
                 >
+                  <img
+                    class="social-container-list-item-img"
+                    src="./images/Vector-fb.svg"
+                    alt="иконка фб"
+                /></a>
+              </li>
+              <li class="social-container-list-item">
+                <a
+                  class="social-container-list-item-link"
+                  target="_blank"
+                  href="#"
+                >
+                  <img
+                    class="social-container-list-item-img"
+                    src="./images/Vector-lid.svg"
+                    alt="иконка линкедына"
+                /></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="social-container">
-          <b class="social-container-text">ПРИСОЕДЕНЯЙТЕСЬ</b>
-          <ul class="social-container-list list">
-            <li class="social-container-list-item">
-              <a
-                class="social-container-list-item-link"
-                target="_blank"
-                href="https://www.instagram.com"
-              >
-                <img
-                  class="social-container-list-item-img"
-                  src="./images/Vector-instagram.svg"
-                  alt="иконка инстаграм"
-                />
-              </a>
-            </li>
-            <li class="social-container-list-item">
-              <a
-                class="social-container-list-item-link"
-                target="_blank"
-                href="#"
-              >
-                <img
-                  class="social-container-list-item-img"
-                  src="./images/Vector-twr.svg"
-                  alt="иконка твиттера"
-              /></a>
-            </li>
-            <li class="social-container-list-item">
-              <a
-                class="social-container-list-item-link"
-                target="_blank"
-                href="#"
-              >
-                <img
-                  class="social-container-list-item-img"
-                  src="./images/Vector-fb.svg"
-                  alt="иконка фб"
-              /></a>
-            </li>
-            <li class="social-container-list-item">
-              <a
-                class="social-container-list-item-link"
-                target="_blank"
-                href="#"
-              >
-                <img
-                  class="social-container-list-item-img"
-                  src="./images/Vector-lid.svg"
-                  alt="иконка линкедына"
-              /></a>
-            </li>
-          </ul>
+          </div>
         </div>
       </div>
     </footer>
